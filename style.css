@@ -1,0 +1,268 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+color:white;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.ahare {
+    text-decoration: none;
+    color: red;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff3450;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    nav a {
+        padding: 15px;
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+.FloatLeft {
+    float: left;
+}
+
+.TextCenter {
+    text-align: center;
+}
+
+.ClearFix {
+    clear: both;
+}
+
+.Container {
+    margin: auto;
+}
+@media (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .Container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) and (max-width:1199px) {
+    .Container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .Container {
+        width: 1200px;
+    }
+}
+.PhotoPar {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 36px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    padding-bottom: 45px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+.PhotoPar::before {
+    background: #ff3450;
+    bottom: 12px;
+    content: "";
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 170px;
+}
+.PhotoPar::after {
+    bottom: 0px;
+    color: rgb(255, 255, 255);
+    content: "";
+    font-size: 14px;
+    height: 30px;
+    left: 50%;
+    line-height: 30px;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 30px;
+    background: rgb(255, 52, 80);
+    border-radius: 50%;
+}
+.PhotoPar i.fa {
+    background: #ff3450;
+    border-radius: 15px;
+    bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    height: 30px;
+    left: 50%;
+    line-height: 30px;
+    position: absolute;
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+    width: 30px;
+    z-index: 9;
+}
+.item {
+    width: 100%;
+}
+.Client {
+    margin-top: 5%;
+}
+.ClientsTypeContent {
+    width: 15%;
+    margin-left: 1.66666%;
+    height: 120px;
+}
+.ClientsTypeContent img {
+    width: 100%;
+    margin: 1px 0px;
+    padding: 0 20px;
+}
+@media (max-width: 767px) {
+    .ClientsTypeContent {
+        width: 40%;
+        margin-left: 5%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    .ClientsTypeContent:nth-of-type(even) {
+        margin-left: 10%;
+    }
+}
+@media (min-width: 768px) and (max-width:991px) {
+    .ClientsTypeContent {
+        width: 28%;
+        margin-left: 4%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+
+}
+.owl-next {
+    float: right;
+    margin-right: 1%;
+    font-size: 50px !important;
+    position: relative;
+    bottom: 220px;
+    background-color: transparent !important;
+}
+.owl-next:hover,
+.owl-prev:hover {
+    color: #2E9AFE !important;
+}
+.owl-prev {
+    float: left;
+    margin-right: 1%;
+    font-size: 50px !important;
+    position: relative;
+    bottom: 220px;
+    background-color: transparent !important;
+}
+@media (max-width: 767px) {
+
+    .owl-prev,
+    .owl-next {
+        display: none !important;
+    }
+    .PhotoPar {
+        font-size: 25px;
+        margin-top: 75px;
+    }
+    .item {
+        width: 100% !important;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px) {
+    .owl-prev,
+    .owl-next {
+        display: block !important;
+        bottom: 190px !important;
+        font-size: 30px !important;
+    }
+}
+@media(min-width:992px) and (max-width: 1199px) {
+    .owl-prev,
+    .owl-next {
+        bottom: 160px !important;
+        font-size: 30px !important;
+    }
+}
+footer {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+hr {
+    margin-top: 30px;
+}
+.ayhay {
+    text-align: center;
+}
